@@ -1,0 +1,64 @@
+.product-specs {
+    thead {
+        // display: none;
+
+        th {
+            width: 28%;
+            text-align: left;
+            padding: 30px 10px;
+            font-family: 'robotoregular';
+            font-size: 16px;
+
+            &:first-child {
+                width: 45%;
+            }
+        }
+    }
+
+    tr {
+        background: $table-grey;
+        border-top:1px solid $lightgrey-separator;
+        width: 100%;
+
+        &:last-child {
+            border-bottom: 1px solid $lightgrey-separator;
+        }
+
+        td {
+            
+            background: $white;
+            font-family: 'robotoregular';
+            font-size: 16px;
+            color: $darkgrey;
+            padding: 30px 10px;
+            border: none!important;
+            width: 28%;
+
+
+            @media(max-width: 768px) {
+                font-size: 14px;
+            }
+            
+
+            &:first-child {
+                color: $dark-link;
+                padding-left: 20px;
+                padding-right: 20px;
+                width: 45%;
+            }
+            &:last-child {
+              
+                padding-right: 20px;
+              
+            }
+        }
+
+        &:nth-child(even) {
+            background: $table-grey;
+            td {
+                background: $table-grey;
+            }
+        }
+    }
+    
+}

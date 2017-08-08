@@ -1,0 +1,27 @@
+@import "modules/css-reset";
+@import "modules/variables";
+@import "modules/fonts";
+
+@import "modules/header";
+@import "modules/footer";
+@import "modules/main-nav";
+@import "modules/footer-nav";
+@import "modules/slider";
+@import "modules/link";
+@import "modules/common";
+@import "modules/typography";
+@import "modules/button";
+@import "modules/nav-btn";
+@import "modules/nav-products";
+@import "modules/input";
+@import "modules/tabs-container";
+@import "modules/table-specs";
+@import "modules/modal";
+
+@import "pages/homepage";
+@import "pages/contact";
+@import "pages/products";
+@import "pages/team";
+@import "pages/mission";
+@import "pages/careers";
+@import "pages/partners";

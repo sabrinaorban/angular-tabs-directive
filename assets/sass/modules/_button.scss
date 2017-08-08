@@ -1,0 +1,27 @@
+.button, button {
+    font-family: 'robotoregular';
+    font-size: 16px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 14px 26px;
+    text-transform: uppercase;
+    width: 154px;
+
+    &:hover, &:active, &:focus {
+        opacity: 0.9;
+        
+    }
+    &.btn-reversed {
+        background: $white;
+        color: $main-color;
+        border: 1px solid $main-color;
+
+        &:hover, &:active, &:focus {
+            background: $main-color;
+            border: 1px solid $main-color;
+            color: $white;
+            text-decoration: none;
+        }
+    }
+}

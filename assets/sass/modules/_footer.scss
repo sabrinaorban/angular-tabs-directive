@@ -1,0 +1,127 @@
+.footer {
+ 
+    background: $footer-blue;
+    padding: 60px 0 24px;
+    position: relative;
+
+   
+
+    .flex-container.parent {
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        align-items: center;
+
+        .flex-container {
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        @media(max-width: 960px) {
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+        .flex-item {
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+
+            &.footer-nav-container {
+                @media(max-width: 960px) {
+                     margin-top: 40px;
+                }
+               
+            }
+           
+        }
+    }
+    .footer-logo-container {
+        margin-right: 72.5px;
+
+        @media(max-width:1040px) {
+            margin-right: -46.5px;
+        }
+
+        @media(max-width: 768px) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        @media(max-width: 680px) {
+            margin: 0;
+        }
+        
+    }
+    .logo-container {
+        width: 66px;
+        height: 79px;
+        background: url('../img/logo-ex.png') no-repeat center;
+        background-size: 100%;
+        display: block;
+
+    }
+    .copyright {
+        font-family: 'robotolight';
+        font-size: 10px;
+        color: $copyright-color;
+        text-align: center;
+        margin-top: 24px;
+    }
+    .social-container {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+
+        @media(max-width: 960px) {
+            flex-direction: row!important;
+            margin-top: 54px;
+        }
+
+        .social {
+            display: block;
+            margin-right: 18px;
+            
+
+            &:hover, &:active, &:focus {
+                opacity: 0.8;
+                cursor: pointer;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &.social-linkedin {
+                width: 15px;
+                height: 15px;
+                background: url('../img/linkedin-icon.png') no-repeat center;
+                background-size: 100%;
+            }
+            &.social-twitter {
+                width: 15.5px;
+                height: 12.5px;
+                background: url('../img/twitter-icon.png') no-repeat center;
+                background-size: 100%;
+            }
+            &.social-facebook {
+                width: 7.5px;
+                height: 15.5px;
+                background: url('../img/fb-icon.png') no-repeat center;
+                background-size: 100%;
+            }
+            &.social-dribble {
+                width: 15.5px;
+                height: 15.5px;
+                background: url('../img/dribble-icon.png') no-repeat center;
+                background-size: 100%;
+            }
+        }
+    }
+}

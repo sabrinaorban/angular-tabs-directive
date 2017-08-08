@@ -1,0 +1,83 @@
+.mission {
+
+    .section-hero {
+        background: url('../img/mission-bg-main.jpg') no-repeat center;
+        background-size: cover;
+        height: 430px;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        padding-bottom: 77px;
+        @media(max-width: 960px) {
+            height: 400px;
+        }
+        @media(max-width: 768px) {
+            height: 360px;
+        }
+        @media(max-width: 460px) {
+            height: 310px;
+            padding-bottom: 45px;
+        }
+
+        .h1 {
+            text-align: center;
+        }
+    }
+    .section-mission {
+        padding-top: 108px;
+        padding-bottom: 153px;
+
+        @media(max-width: 768px) {
+            padding-top: 72px;
+            padding-bottom: 100px;
+        }
+
+        .h5 {
+
+            font-family: 'robotomedium';
+            font-size: 34px;
+            color: $main-color;
+            line-height: 50px;
+            max-width: 767px;
+            margin: 0 auto 75px;
+
+            @media(max-width: 960px) {
+                font-size: 28px;
+                line-height: 44px;
+            }
+            @media(max-width: 768px) {
+                margin: 0 auto 43px;
+            }
+            @media(max-width: 600px) {
+                font-size: 22px;
+                 line-height: 34px;
+            }
+        }
+        .image-container {
+            background: url('../img/mission-content-img.jpg') no-repeat center;
+            height: 590px;
+            background-size: cover;
+            max-width: 1100px;
+            margin: 0 auto 95px;
+
+            @media(max-width: 960px) {
+                height: 420px;
+            }
+             @media(max-width: 768px) {
+                height: 360px;
+                margin: 0 auto 46px;
+            }
+            @media(max-width: 460px) {
+                height: 300px;
+            }
+
+        }
+
+        p {
+            max-width: 812px;
+            margin: 0 auto 38px;
+            font-family: 'robotoregular';
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+}

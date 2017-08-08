@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html data-ng-app="App" data-ng-controller="AppCtrl" ng-cloak>
+    <head>
+        <title>Angular Tabs Directive</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script type="text/javascript" src="app/angular-ui-router.js"></script>
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+        
+
+    </head>
+
+    <body data-ng-class="{'nav-open': navOpen}">
+        
+        <div class="main">
+                <div class="products">
+                <section class="product-details">
+                    <div class="container">
+                        <div data-tabs-wrapper class="">
+                                <div class="flex-container tabs-container">
+                                    <div class="flex-item side-menu">
+
+                                        <div class="tabs-header">
+                                            <ul class="tabs-view" data-tab-set data-ng-class="selectedTab" data-tab-change-handler="tabSelectedHandler">
+                                                <li><a data-tab="tab1" class="tab" data-default-tab="tab1" data-ng-class="{'active': tabs.tab1.active}">Tab 1 </a></li>
+                                                <li><a data-tab="tab2" class="tab" data-ng-class="{'active': tabs.tab2.active}">Tab 2</a></li>
+                                                <li><a data-tab="tab3" class="tab" data-ng-class="{'active': tabs.tab3.active}">Tab 3</a></li>
+                                                <li><a data-tab="tab4" class="tab" data-ng-class="{'active': tabs.tab4.active}">Tab 4</a></li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- Tabs content -->
+                                    <div class="tabs-content">
+                                        <!-- Tab OVERVIEW -->
+                                        <div class="tab tab-product-overview" data-ng-if="tabs.tab1.active">
+                                            <h2 class="h2">Tab 1 content</h2>
+                                        </div>
+                                        <!-- Tab SPECIFICATION -->
+                                        <div class="tab tab-product-specifications" data-ng-if="tabs.tab2.active">
+                                            <h2 class="h2">Tab 2 content</h2>
+                                        </div>
+                                        <!-- Tab DOWNLOAD -->
+                                        <div class="tab tab-download" data-ng-if="tabs.tab3.active">
+                                            <h2 class="h2">Tab 3 content</h2>
+                                        </div>
+
+                                        <!-- Tab ORDER -->
+                                        <div class="tab tab-order" data-ng-if="tabs.tab4.active">
+                                            <h2 class="h2">Tab 4 content</h2>
+                                            
+                                        </div>
+                                </div>
+                            </div>
+                        </div>                     
+                    </div>
+                </section>
+            </div>
+        </div>
+       
+        <script type="text/javascript" src="app/app.js"></script>
+    </body>
+</html>

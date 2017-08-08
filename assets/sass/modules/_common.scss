@@ -1,0 +1,130 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+.flex-container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.h5 {
+    position: relative;
+    z-index: 10;
+
+    &.second {
+        z-index: 15;
+    }
+}
+
+
+.fixed-bar {
+    position: fixed;
+    top: 88px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+
+    
+}
+
+html {
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+html, body {
+    background: $white;
+}
+.hidden {
+    display: none!important;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+    background: rgba(0,0,0, 0.5);
+}
+.section-hero {
+    position: relative;
+
+    .h1 {
+        position: relative;
+        z-index: 3;
+    }
+}
+.container {
+    max-width: 1700px!important;
+    width: 100%!important;
+    position: relative;
+    z-index: 3;
+
+    
+    
+
+    @media(max-width: 1780px) {
+        padding: 0 40px;
+    }
+
+    @media(max-width: 960px) {
+        padding: 0 20px;
+    }
+}
+.container-fullWidth {
+    max-width: 1700px;
+    
+}
+// .scroll {
+//      width: 100%;
+//     overflow: hidden;
+//     height: 82px;
+
+// }
+// .helper {
+//         overflow-x: scroll;
+//     height: 100px;
+// }
+.bold {
+    font-family: 'robotobold';
+}
+.section {
+    position: relative;
+
+    &.section-hero {
+    
+        display: -webkit-box;
+    
+        display: -ms-flexbox;
+    
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+
+        .h1 {
+            color: $white;
+        }
+    }
+
+    .h2 {
+        text-align: center;
+    }
+}
+
+.next-section {
+    background: url('../img/next-section.png') no-repeat center;
+    background-size: 100%;
+    width: 29px;
+    height: 29px;
+    display: block;
+    margin: 0 auto;
+}

@@ -1,0 +1,54 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+    height: 116.5px;
+    
+    padding-top: 19px;
+
+    @media(max-width: 960px) {
+        padding: 23px 10px 0 50px;
+    }
+    @media(max-width: 768px) {
+        padding: 23px 0 0 0;
+    }
+
+    .flex-container {
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+
+        &.parent {
+            position: relative;
+        }
+    }
+
+    .logo-container {
+        width: 89px;
+        height: 38px;
+        display: block;
+        background: url('../img/logo-ex.png') no-repeat center;
+        background-size: 100%; 
+
+        cursor: pointer;
+    }
+
+    &.fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 999;
+        height: 88px;
+        padding: 27px 0 16px;
+        background: $header-color;
+        
+    }
+}

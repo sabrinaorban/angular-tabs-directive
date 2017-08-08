@@ -1,0 +1,85 @@
+.tabs-container {
+    justify-content: center;
+
+    @media(max-width: 768px) {
+        flex-direction: column;
+    }
+
+    .side-menu {
+        max-width: 260px;
+        width: 100%;
+        min-width: 240px;
+        // margin-left: 160px;
+        justify-content: center;
+        
+
+
+        @media(max-width: 1130px) {
+           
+        }
+        @media(max-width: 960px) {
+            max-width: 225px;
+            min-width: 225px;
+        }
+        @media(max-width: 768px) {
+            margin-left: 0;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
+            min-width: initial;
+            max-width: initial;
+            border-bottom: 1px solid $lightgrey-separator;
+            margin-bottom: 70px;
+        }
+    
+
+        ul {
+            li {
+                .tab {
+                    font-family: 'robotoregular';
+                    font-size: 16px;
+                    color: $dark-link;
+                    padding: 28px 0;
+                    display: block;
+                    cursor: pointer;
+                    border-bottom: 1px solid $lightgrey-separator;
+                    text-transform: capitalize;
+
+
+                    @media(max-width: 768px) {
+                        border-bottom: none;
+                        border-top: none;
+                    }
+                    @media(max-width: 460px) {
+                        font-size: 14px;
+                    }
+
+                    &:hover, &:focus, &:active {
+                        font-family: 'robotobold';
+                        text-decoration: none;
+                    }
+
+                    &.active {
+                        font-family: 'robotobold';
+                    }
+
+
+                }
+                &:first-child {
+                    a {
+                        border-top: 1px solid $lightgrey-separator;
+
+                        @media(max-width: 768px) {
+                            border-top: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

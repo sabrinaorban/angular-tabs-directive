@@ -1,0 +1,87 @@
+.input-container {
+    position: relative;
+    margin-bottom: 40px;
+
+
+    &.error {
+        p.help-text {
+            position: absolute;
+            max-width: initial!important;
+            font-size: 11px!important;
+            color: red!important;
+            margin-bottom: 0!important;
+            font-family: 'robotoregular'!important;
+        }
+    }
+
+    input, .text-input, input[type="text"] {
+        font-family: 'robotoregular';
+        width: 100%;
+        border: none!important;
+        border-bottom: 1px solid $darkgrey!important;
+        background: transparent!important;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 10px;
+        margin-bottom: 0;
+        box-sizing: border-box;
+        height: auto;
+
+        &:focus, &:hover, &:active {
+            background: transparent!important;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid $darkgrey;
+            box-shadow: none;
+        }
+        
+
+    }
+    label {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-family: 'robotoregular';
+        font-size: 12px;
+        color: $darkgrey;
+        transition: .1s all linear;
+        cursor: text;
+    }
+
+    
+    textarea {
+        font-family: 'robotoregular';
+        border: 1px solid $darkgrey;
+        background: transparent;
+        padding: 10px;
+        resize: none;
+        outline: none;
+
+        &:hover, &:active, &:focus {
+            outline: none;
+            box-shadow: none;
+            border: 1px solid $darkgrey;
+
+        }
+        
+    }
+    &.active {
+        label {
+            top: -15px;
+            left: 10px;
+          
+            
+        }
+    }
+}
+.textarea-container {
+
+    &.active {
+
+        label {
+            top: -30px;
+        }
+    }
+}
+
+
